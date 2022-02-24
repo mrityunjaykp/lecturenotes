@@ -1,0 +1,56 @@
+Dimensionality reduction is the process of 
+reducing the number of random variable under consideration 
+by obtaining a set of principle variable
+
+1. Feature Selection -:
+We try to find a subset of the original set of variables or features
+to get a smaller subset which be used to model the problem
+-> It usually involves three
+		-: Filter (IG, Chi2 test, Anova test, corr coef
+		-: Wapper ( Genetic Algorithm, Recurrsive Feature elimination
+		-: Embedded (Decision Tree, L1, L2)
+		-: Backward elimination
+		-: Forward Selection
+		-: Bidirectional Elimination
+		-: Score comparison
+
+2. Feature Extraction -:
+This reduces the data from a high dimensional space to a lower dimension space
+i.e space with lesser no of dimension
+
+		- Principle Component Analysis -: The goal is,
+							a. to identify pattern in data
+							b. to detect the correlation between variable
+						-: It reduces the dimensions of a d-dimensional dataset by projecting it onto a k-dimension subspace (k<d)
+
+			Working-:
+			- Standardize the data
+			- Obtain the eigen vectors & eigenvalues from the co-variance matrix or correlation matrix 
+				or / perform singular vector vector decomposition
+			- Sort the eigen values in descending order and choose the k-eigen vectors that corresponds the k largest eigen values of the new feature subspcace (k<d)
+			- Construct the projection matrix W from the selected k eigen vectors
+			- Transform the original dataset "X" & "W" to obtain k dimensional features subspace "y"
+
+		PCA learns about the relationship between x & y quantified by finding list of principle axis
+		PCA is highly affected by the outliers in the data
+
+
+
+
+
+
+			- Linear Discriminant Analysis
+			- Kernel PCA
+
+
+
+What predictive modeling
+it is a probabilistic process that allows us to forecaste
+outcome on the basis of some predictors.
+
+These predictors are basically features that come into play
+when deciding the final result i.e the outcome of the model
+
+
+
+
